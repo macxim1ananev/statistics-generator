@@ -1,0 +1,19 @@
+server:
+  ip: localhost
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:postgresql://172.17.0.1:5432/one_to_one
+    username: ${DB_USERNAME:one_to_one}
+    password: ${DB_PASSWORD:onetoone}
+
+  kafka:
+    bootstrap-server: ${KAFKA_SERVER:kafka:29092, kafka2:29093}
+    consumer:
+      statistics-generator:
+        id: statistics-generator-consumer
+    topics:
+      user-answer:
+        name: user-answer-topic
+        key: user-answer-topic-key
