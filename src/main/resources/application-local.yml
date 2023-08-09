@@ -9,10 +9,9 @@ spring:
     password: ${DB_PASSWORD:onetoone}
 
   kafka:
-    bootstrap-server: ${KAFKA_SERVER:kafka:29092, kafka2:29093}
+    bootstrap-server: ${KAFKA_SERVER:kafka:29092}
     consumer:
-      statistics-generator:
-        id: statistics-generator-consumer
+      group-id: statistics-generator-consumer
     topics:
       user-answer:
         name: user-answer-topic

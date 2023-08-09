@@ -2,7 +2,10 @@ package com.example.statisticsgenerator.core.statistics.interactors;
 
 import com.example.statisticsgenerator.core.service.common.Interactor;
 import com.example.statisticsgenerator.core.service.error.ServiceException;
-import com.example.statisticsgenerator.core.service.interfaces.*;
+import com.example.statisticsgenerator.core.service.interfaces.Technologies;
+import com.example.statisticsgenerator.core.service.interfaces.Users;
+import com.example.statisticsgenerator.core.service.interfaces.UsersStatistics;
+import com.example.statisticsgenerator.core.service.interfaces.UsersTechnologyStatistics;
 import com.example.statisticsgenerator.core.statistics.commands.GenerateStatisticsCommand;
 import com.example.statisticsgenerator.core.statistics.entities.UserAnswer;
 import com.example.statisticsgenerator.core.statistics.entities.UserStatistics;
@@ -13,7 +16,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
